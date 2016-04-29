@@ -1,0 +1,31 @@
+<div class="row">
+	<div class="small-12 medium-12 large-12 small-centered columns">
+		<header>		
+			<h1><a href="index.html">Linsey Raymaekers</a></h1>
+			<h2><a href="index.html">A Games Portfolio</a></h2>
+			<div class="logo">
+                <a href="index.html"><img src="{{ site.baseurl }}/img/logo.png" alt="Logo" /></a>
+			</div>
+		</header>
+	</div>
+	<div class="small-12 medium-12 large-12 small-centered columns">
+		<nav>
+			<ul class="inline-list-custom">
+            {% for page in site.pages %}
+                {% if page.title %}
+                    <li><a class="page-link" {% if page.title == page.current %}class="current"{% endif %} 
+                           href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+			</ul>
+            <!--
+			<ul class="inline-list-custom">
+				<li><a href="index.html" class="current">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>							
+			</ul>
+            --!>
+		</nav>
+	</div>
+</div>
+

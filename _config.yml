@@ -1,0 +1,12 @@
+# Site settings
+title: Linsey Raymaekers
+#email: your-email@domain.com
+description: "A Games Portfolio"
+baseurl: ""
+#url: "linseyray.github.io"
+twitter_username: linsey_ray
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+highlighter: true
