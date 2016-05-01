@@ -1,33 +1,22 @@
 ---
 layout: default
 ---
-<div class="post">
-
-  <header class="post-header">
-    <h1>{{ page.title }}</h1>
-    <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
-  {{ content }}
-  </article>
-
-</div>
 
 
-<!--
 <div class="row">
 	<div class="small-12 medium-7 large-7 columns">
-		<h2>Project Title</h2>
+        <h2>{{ page.title }}</h2>
 		<p>
-            Stuff can go here
+            {{ page.description }}
 		</p>
 	</div>
 	<div class="small-12 medium-5 large-5 columns">
 		<div class="lined-list">
 			<ul>
-                <li><strong>Role:</strong>{{ page.role }}</li>
-                <li><strong>Year:</strong>{{ page.year }}</li>
+                <li><strong>Role:</strong> {{ page.role }}</li>
+                <li><strong>Tools:</strong> {{ page.tools }}</li>
+                <li><strong>Language:</strong> {{ page.language }}</li>
+                <li><strong>Year:</strong> {{ page.year }}</li>
 			</ul>
 		</div>
 	</div>
@@ -39,21 +28,21 @@ layout: default
 		
 		<!-- Begin project image -->
 		<div class="project-img">
-			<img src="img/projects/project-01a.png" alt="Project 01a" />
+            <img src="{{ site.baseurl }}/img/games/{{ page.filename }}a.png" alt="Project 01a" />
 			<h6>Project 01a Caption</h6>
 		</div>
 		<!-- End project image -->
 		
 		<!-- Begin project image -->
 		<div class="project-img">
-			<img src="img/projects/project-01b.png" alt="Project 01b" />
+            <img src="{{ site.baseurl }}/img/games/{{ page.filename }}b.png" alt="Project 01b" />
 			<h6>Project 01b Caption</h6>
 		</div>
 		<!-- End project image -->
 		
 		<!-- Begin project image -->
 		<div class="project-img">
-			<img src="img/projects/project-01c.png" alt="Project 01c" />
+            <img src="{{ site.baseurl }}/img/games/{{ page.filename }}c.png" alt="Project 01c" />
 			<h6>Project 01c Caption</h6>
 		</div>
 		<!-- End project image -->
@@ -67,4 +56,3 @@ layout: default
 	</div>
 </div>
 
---!>

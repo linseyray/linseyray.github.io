@@ -10,3 +10,10 @@ twitter_username: linsey_ray
 markdown: kramdown
 permalink: pretty
 highlighter: true
+
+
+collections:
+    games:
+        output: true
+        
+      
