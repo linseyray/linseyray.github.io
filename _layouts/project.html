@@ -7,10 +7,7 @@ layout: default
 <div class="container mt">
     <div class="row">
 
-        {% include carousel.html %}
-
-        <div class="col-lg-5 col-lg-offset-1">
-            <div class="spacing"></div>
+        <div class="col-lg-5 col-lg-offset-2">
 
             {{ content }}
 
@@ -25,7 +22,8 @@ layout: default
             <p><b>Tagged:</b> {{ page.tagged }}</p>
             <p><b>Website:</b> <a href="{{ page.website }}">{{ page.website }}</a></p>
         </div>
+
+        {% include carousel.html %}
+
     </div><! --/row -->
 </div><! --/container -->
-	 
-{% include portfolio.html title="Related Works." limit=5 %}

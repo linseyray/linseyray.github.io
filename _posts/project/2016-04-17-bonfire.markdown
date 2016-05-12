@@ -1,0 +1,18 @@
+---
+layout: project
+title:  "Bonfire"
+date:   2016-04-17
+author: Linsey Raymaekers
+categories:
+- project
+img: bonfire/thumbnail.png
+carousel:
+- bonfire/one.png
+- bonfire/two.png
+tagged: GameJam, Lowrezjam
+website: https://linseyray.itch.io/compass
+---
+####Description
+More goes here
+
+<a href="http://poeticvideogames.tumblr.com/post/143386350070/three-game-jams-in-three-weeks">Post-mortem</a>

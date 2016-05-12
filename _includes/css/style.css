@@ -22,10 +22,10 @@
 	} 
 
 body { 
-	background: #ffffff; 
+	background: {{ site.colors.content_bg }}; /* #ffffff;  */
 	margin: 0; 
 	height: 100%; 
-	color: {{ site.colors.secondary }};
+	color: {{ site.colors.font_light }};
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	}
@@ -42,7 +42,7 @@ p {
 	font-weight: 400;
 	font-size: 14px; 
 	line-height: 24px;
-	color: {{ site.colors.secondary }}; 
+	color: {{ site.colors.font_light }}; 
 	margin-top: 10px; 
 }
 
@@ -118,11 +118,11 @@ a:focus {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-	color: {{ site.colors.primary }};
+	color: {{ site.colors.font_menu_hover }};
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: {{ site.colors.primary }};
+	color: {{ site.colors.font_menu }};
 	background-color: transparent;
 }
 
@@ -216,10 +216,10 @@ a:focus {
 ################################################################# */
 
 #headerwrap {
-	background-color: {{ site.colors.primary }};
+	background-color: {{ site.colors.content_bg }};
 	min-height: 0px;
-	padding-top: 100px;
-	padding-bottom: 50px;
+	padding-top: 70px;
+	padding-bottom: 10px;
 	text-align: center;
 }
 
@@ -251,8 +251,8 @@ a:focus {
 
 /* Portfolio Wrap */
 #portfoliowrap {
-	padding-top: 60px;
-	margin-bottom: 60px;
+	padding-top: 0px;
+	margin-bottom: 00px;
 	display: block;
 	text-align: center
 }
@@ -292,8 +292,8 @@ a:focus {
 {
 	height:100%;
 	width:100%;
-	background-color:{{ site.colors.primary }};
-	background-color:rgba({{ site.colors.primary_rgb }},.9);
+	background-color:{{ site.colors.portfolio_item_highlight }};
+	background-color:rgba({{ site.colors.portfolio_item_highlight_rgb }},.9);
 	text-align:center;
 }
 
@@ -358,7 +358,7 @@ a:focus {
 #footerwrap {
 	padding-top: 60px;
 	padding-bottom: 60px;
-	background: {{ site.colors.secondary }};
+	background: {{ site.colors.footer_bg }};
 }
 
 #footerwrap p {
@@ -385,7 +385,7 @@ a:focus {
 /* General Tweaks */
 
 #blue {
-	background: {{ site.colors.primary }};
+	background: {{ site.colors.content_bg }};
 	margin-top: 60px;
 	margin-bottom: 0px;
 	padding-top: 25px;
@@ -404,6 +404,7 @@ a:focus {
   height: 600px;
   max-height: 600px;
   margin: 0 auto;
+  padding-top: 50px;
 }
 
 .carousel-indicators li {
