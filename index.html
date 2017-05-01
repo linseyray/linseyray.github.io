@@ -1,61 +1,24 @@
 ---
-layout: index
-title: Home
-permalink: /
+layout: default
 ---
 
-<div id="service">
-    <div class="container">
-        <div class="row centered">
-            <div class="col-md-4">
-                <i class="fa fa-cog"></i>
-                <h4>Programmer</h4>
-                <p>Currently familiar with many languages and tools, but master of none. See my CV for details. Right now, I plan to increase my knowledge of Unity3D/C#.</p>
-                <p><br/><a href="/portfolio/" class="btn btn-theme">Portfolio</a></p>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-pencil"></i>
-                <h4>Games Writer</h4>
-                <p>I write about games, mostly to increase my own understanding of them and to flesh out my own thoughts and opinions.</p>
-                <p><br/><a href="http://poeticvideogames.tumblr.com/" class="btn btn-theme">Games  blog</a></p>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-pencil-square-o"></i>
-                <h4>Poet</h4>
-                <p>Besides games, I love to express myself in poetry. This was my main form of expression before I started experimenting with creating personal games.</p>
-                <p><br/><a href="http://chunks-of-thought.tumblr.com/" class="btn btn-theme">Poetry blog</a></p>
-            </div>		 				
-        </div>
-    </div><! --/container -->
-</div><! --/service -->
-
-
-<!--
-
-<div class="container mtb">
-    <div class="row">
-        <div class="col-lg-4 col-lg-offset-1">
-            <h4>More About Our Agency.</h4>
-            <p>{{ site.about }}</p>
-            <p><br/><a href="{{ "/about/" | prepend: site.baseurl }}" class="btn btn-theme">More Info</a></p>
-        </div>
-
-        <div class="col-lg-3">
-            <h4>Frequently Asked</h4>
-            <div class="hline"></div>
-            {% for post in site.categories['question'] %} 
-                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
-            {% endfor %}
-        </div>
-
-        <div class="col-lg-3">
-            <h4>Latest Posts</h4>
-            <div class="hline"></div>
-            {% for post in site.categories['blog'] limit:5 %} 
-                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}.</a></p>
-            {% endfor %} 
-        </div>
-    </div>
-    
+<div class="header-bar">
+  <h1>*folio</h1>
+  <h2>simple whitespace theme</h2>
+  <br/>
+  <hr>
+  <br/>
 </div>
---!>
+
+
+<ul class="post-list">
+    {% for post in paginator.posts %}
+      <li>
+        <h2><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        <p class="post-meta">{{ post.date | date: '%B %-d, %Y — %H:%M' }}</p>
+        <p>{{ post.description }}</p>
+        <br/>
+        <hr/>
+      </li>
+    {% endfor %}
+</ul>

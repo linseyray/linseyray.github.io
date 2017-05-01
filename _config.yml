@@ -1,70 +1,29 @@
-### GENERAL SETTINGS ###
-
 # Site settings
-title: Linsey Raymaekers
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-analytics: #Google analytics code in the format XX-nnnnnnnn-n
-baseurl: "" #important: start with /
-url: "http://yourdomain.com"
+title: *folio
+email: you@example.com
+description: > # this means to ignore newlines until "baseurl:"
+  A simple, whitespace, helvetica based portfolio theme.
+baseurl:  # the subpath of your site, e.g. /blog/
+url:  # the base hostname & protocol for your site
+twitter_username: twitter_username
+github_username:  github_username
 
 # Build settings
 markdown: kramdown
-permalink: /:categories/:title
-excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
 
-# Vaida's logo colors:
-#   Green: #D0C79E
-#   Pink: #E67787 
-#
-# Warm, dark pink:      #E52B50
-# Warm, dark purple:    #272935
+highlighter: pygments
 
-colors:  #in hex code if not noted else
-  primary: "#E52B50"      
-      # "#FF4B4B" from Splash 'n Shift
-      # "#E52B50" Amaranth
-      # "#F08080" Coral Pink
-      # "#EB374B" Reddish
-  #primary:  "#FF4973" # Bar under header
-  primary_rgb: "235,55,75" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.  
-  secondary: "#E52B50" # "#272935" # "#222222"  # Footer & Header
-  content_bg: "#272935" # "#272935"
-  font_light: "#ffffff"
-  font_dark: "#272935"
-  font_menu: "#bcdd4a"
-  font_menu_hover: "#bcdd4a"
-  link: "#bcdd4a"
-  link_hover: "#01b2fe"
-  footer_backround: "#272935"
-  footer_heading: "#ffffff"
-  footer_content: "#bfc9d3"
-  portfolio_item_highlight: "#272935"
-  portfolio_item_highlight_rgb: "235, 55, 75" # Needed in some places for the transparency effect.  
-  
-  
-### CONTACT SETTINGS ###
-
-# Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
-social:
-  - title: twitter
-    url: https://twitter.com/linsey_ray 
-  - title: tumblr
-    url: http://poeticvideogames.tumblr.com/ 
-  - title: linkedin
-    url: https://www.linkedin.com/in/linseyraymaekers 
-    
-# Postal address (add as many lines as necessary). Shown in footer and on Contact page.
-#address:
-#  - lines: 
-#    - Some Ave, 987,
-#    - 23890, New York,
-#    - United States.
-email: hello@solidtheme.com
-#tel: +34 8493-4893
+# Pagination
+paginate: 15
+paginate_path: "/blog/page:num/"
 
 
-### GENERAL DATA FOR VARIOUS LOCATIONS ###
-    
-# Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
+  poetry:
+    output: true
+    permalink: /poetry/:path/
+
 
