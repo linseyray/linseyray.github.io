@@ -1,10 +1,14 @@
 # Site settings
-title: *folio
+title: Linsey Raymaekers
 email: you@example.com
+
 description: > # this means to ignore newlines until "baseurl:"
   A simple, whitespace, helvetica based portfolio theme.
+
 baseurl:  # the subpath of your site, e.g. /blog/
+
 url:  # the base hostname & protocol for your site
+
 twitter_username: twitter_username
 github_username:  github_username
 
@@ -12,10 +16,6 @@ github_username:  github_username
 markdown: kramdown
 
 highlighter: pygments
-
-# Pagination
-paginate: 15
-paginate_path: "/blog/page:num/"
 
 
 collections:
@@ -25,5 +25,4 @@ collections:
   poetry:
     output: true
     permalink: /poetry/:path/
-
 

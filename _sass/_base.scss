@@ -24,7 +24,7 @@ $caption_font_size: 12px;
 $caption_color: #aaa;
 
 /* COLORS  */
-$red:  #FF3636;
+$red:  #FF0050;
 $orange: #F29105;
 $blue: #2698BA;
 $green: #11D68B;
@@ -78,6 +78,63 @@ hr{
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 
+}
+
+#home-page-title {
+    color: $red;
+    //padding-bottom: 20px;
+    text-align: left;
+    float: left;
+    line-height: $nav-height;
+    font-weight: bold;
+}
+
+#home-page-profile-picture{
+    padding-right: 20px;
+}
+
+#intro-description {
+    text-align: justify;
+}
+
+.work-offer, .contact-me {
+    text-align: center;
+}
+
+#home-experience a {
+    //color: $red;
+    text-decoration: underline;
+}
+
+#home-experience h1 {
+    font-weight: bold;
+}
+
+h2 {
+    color: $red;
+    padding-bottom: 20px;
+    text-decoration: underline;
+    text-align: horizontal;
+}
+
+
+.talk-title, .curation-title, .gamedev-title {
+    font-weight: bold;
+    //color: $red;
+}
+
+.talk-event, .curation-event {
+    //font-style: italic;
+}
+
+.home-img-container {
+    height: 200px;
+    background-color: #eee;
+    padding: 20px;
+}
+
+.home-img {
+    background-size: cover;
 }
 
 
