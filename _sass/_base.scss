@@ -11,7 +11,7 @@ dl, dd, ol, ul, figure {
 
 
 /** Variables **********************************************/
-$base-font-family:              Helvetica, sans-serif;
+$base-font-family:              'Open Sans', sans-serif;
 $base-line-height:              1.5em;
 $horizontal-spacing-unit:       50px;
 $vertical-spacing-unit:         40px;
@@ -89,32 +89,48 @@ hr{
     font-weight: bold;
 }
 
-#home-page-profile-picture{
+#intro-description {
+    text-align: justify;
     padding-right: 20px;
 }
 
-#intro-description {
-    text-align: justify;
-}
-
 .work-offer, .contact-me {
-    text-align: center;
 }
 
-#home-experience a {
+#home-experience a, #home-intro a {
     //color: $red;
     text-decoration: underline;
 }
 
-#home-experience h1 {
-    font-weight: bold;
+.experience-category ul, .experience-category li {
+    list-style-type: none;
+    list-style-position:inside;
+    margin-left: 0;
+    padding-left: 0;
 }
 
-h2 {
-    color: $red;
+#home-experience h1 {
+    //font-weight: bold;
+    text-align: center;
     padding-bottom: 20px;
-    text-decoration: underline;
-    text-align: horizontal;
+    padding-top: 20px;
+}
+
+#home-experience h2 {
+    color: $red;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    //text-decoration: underline;
+    //text-align: center;
+}
+
+.experience-category {
+    padding-bottom: 40px;
+}
+
+.horizontal-divider {
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 
@@ -127,11 +143,15 @@ h2 {
     //font-style: italic;
 }
 
-.home-img-container {
+.home-img-container, #home-page-profile-picture{
     height: 200px;
     background-color: #eee;
-    padding: 20px;
+    padding: 10px;
 }
+
+ #home-page-profile-picture {
+    height: 250px;
+ }
 
 .home-img {
     background-size: cover;
