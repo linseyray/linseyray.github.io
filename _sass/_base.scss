@@ -80,6 +80,10 @@ hr{
 
 }
 
+#home-intro {
+    margin-top: -50px;
+}
+
 #home-page-title {
     color: $red;
     //padding-bottom: 20px;
@@ -96,6 +100,13 @@ hr{
 
 .work-offer, .contact-me {
 }
+
+#contact-info {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 
 #home-experience a, #home-intro a {
     //color: $red;
@@ -150,7 +161,8 @@ hr{
 }
 
  #home-page-profile-picture {
-    height: 250px;
+    height: 500px;
+    object-fit: fill;
  }
 
 .home-img {
