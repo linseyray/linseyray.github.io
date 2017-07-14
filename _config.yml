@@ -1,16 +1,16 @@
 # Site settings
 title: Linsey Raymaekers
-email: you@example.com
+# email: @example.com
 
 description: > # this means to ignore newlines until "baseurl:"
-  A simple, whitespace, helvetica based portfolio theme.
+  iLinsey Raymaekers studied Human-Computer Interaction at the University of Hasselt, Belgium. She started making video games through game jams and One Game A Month, and spent a year visiting game events across Europe while she completed her degree. After years of writing poetry and playing music as emotional outlets and forms of self-expression, she is now interested in how game development can be pursued for similar reasons and motivations. She is currently an intern in game programming at Honig Studios in Berlin.
 
 baseurl:  # the subpath of your site, e.g. /blog/
 
 url:  # the base hostname & protocol for your site
 
-twitter_username: twitter_username
-github_username:  github_username
+twitter_username: linsey_ray
+github_username:  linseyray
 
 # Build settings
 markdown: kramdown
