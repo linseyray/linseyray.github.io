@@ -148,7 +148,7 @@ hr{
 .talk-title, .curation-title, .gamedev-title {
     font-weight: bold;
     //color: $red;
-}
+
 
 .talk-event, .curation-event {
     //font-style: italic;
@@ -313,5 +313,9 @@ pre {
     }
 }
 
+
+.event-li li {
+    margin-left: 25px;
+}
 
 
