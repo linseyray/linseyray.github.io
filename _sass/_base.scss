@@ -103,7 +103,15 @@ hr{
     padding-right: 20px;
 }
 
-.work-offer, .contact-me {
+.work-offer { 
+    color: $red;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact-me {
+    text-align: center;
+    text-decoration: underline;
 }
 
 #contact-info {
@@ -149,7 +157,7 @@ hr{
 }
 
 .experience-category {
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 }
 
 .horizontal-divider {
